@@ -177,10 +177,21 @@ header .navcontainer {
   justify-content: space-between;
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;
+  align-items: center;
+  margin: 24px auto;
 }
 header .navcontainer nav {
+  width: 40%;
+  margin-right: 15px;
   display: flex;
+  justify-content: space-around;
+}
+header .navcontainer nav a {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
 .footer {
   width: 100%;
