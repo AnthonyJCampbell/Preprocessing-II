@@ -1,1 +1,30 @@
-// Navigation Styles here
+@import "mixins.less";
+
+//Navigation Styles here
+header {
+    width: 100%;
+    border-bottom: 2px dashed silver;
+    margin-bottom: 0;
+    .navcontainer {
+        display: flex;
+        justify-content: space-between;
+        max-width: @max-page-width;
+        width: 100%;
+        align-items: center;
+        margin: 24px auto;
+        nav {
+            width: 40%;
+            margin-right: 15px;
+            display: flex;
+            justify-content: space-around;
+            a {
+                .normal-text();
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media @media {
+    background-color: red;
+}
