@@ -14,9 +14,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
-    
+  }
+  
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -30,7 +29,6 @@
         border-radius: 10px;
       }
     }
-  }
 
   .inverse-content {
     padding-bottom: 30px;
@@ -80,4 +78,28 @@
       }
     }
   }
-}// home
+}
+// home
+
+
+@media (max-width: 500px) {
+  .home {
+    .content-section {
+      flex-direction: column;
+      .text-content, .img-content{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .inverse-content .text-content {
+      order: -1;
+    }  
+    .content-pick {
+      flex-direction: column;
+      .destination {
+        width: 100%;
+      }
+    }
+  }
+}
